@@ -1,0 +1,18 @@
+var b = document.getElementById('bb');
+
+b.onkeyup =function(e){
+  var mm = e.target.value;
+  mm = mm.toLowerCase();
+ // alert(mm);
+  switch(mm){
+    case 'happy':
+      document.body.className = 'happy';
+    break;
+     case 'sad':
+      document.body.className = 'sad';
+      break;
+     default:
+      document.body.className = '';
+      break;
+  }
+ }
